@@ -2,7 +2,7 @@
 VOICE: caderno de estudo sério e acessível, de uma procuradora que aprende e explica.
 IDEA: um boletim impresso de estudo, com a linha do tempo da reforma como fio condutor.
 PICTURE: na capa, a linha do tempo 2026–2033 em faixa azul-marinho.
-COLOUR and TYPE: as cores dos cards (azul-marinho, azul, vermelho, branco, papel); DM Serif Display + Source Sans 3.
+COLOUR and TYPE: as cores dos cards (azul-marinho, azul, vermelho, branco, papel); Montserrat; selo da série no cabeçalho e assinatura D | Q no rodapé.
 LAYOUT: cabeçalho, faixa de destaque, lista de artigos em coluna única; artigo em coluna de leitura de 68 caracteres.
 */
 :root{
@@ -12,7 +12,7 @@ LAYOUT: cabeçalho, faixa de destaque, lista de artigos em coluna única; artigo
 }
 *{box-sizing:border-box;min-width:0}
 html{scroll-padding-top:72px}
-body{margin:0;background:var(--papel);color:var(--marinho);font:17px/1.65 'Source Sans 3',system-ui,sans-serif;overflow-x:clip}
+body{margin:0;background:var(--papel);color:var(--marinho);font:16.5px/1.75 'Montserrat',system-ui,sans-serif;overflow-x:clip}
 a{color:var(--vermelho);text-underline-offset:3px}
 a:hover{color:#962C21}
 a:focus-visible{outline:3px solid var(--azul);outline-offset:3px;border-radius:4px}
@@ -23,7 +23,7 @@ img{max-width:100%}
 .topo .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:16px max(5vw,16px);max-width:1240px;margin:0 auto}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--marinho);margin-right:auto}
 .marca svg{flex:none}
-.marca b{font:400 22px/1.1 'DM Serif Display',Georgia,serif}
+.marca b{font:600 22px/1.1 'Montserrat',system-ui,sans-serif}
 .marca small{display:block;font-size:13px;color:var(--cinza)}
 .menu{display:flex;flex-wrap:wrap;gap:4px 20px;font-weight:600;font-size:16px}
 .menu a{color:var(--marinho);text-decoration:none;padding:10px 0;display:inline-block}
@@ -31,9 +31,9 @@ img{max-width:100%}
 
 /* Faixa da capa */
 .capa{background:var(--marinho);color:var(--branco)}
-.capa .wrap{max-width:1240px;margin:0 auto;padding:clamp(36px,6vw,80px) max(5vw,16px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:center}
-.capa h1{font:400 clamp(34px,5vw,52px)/1.05 'DM Serif Display',Georgia,serif;margin:0 0 18px;text-wrap:balance}
-.capa p{color:var(--azul-claro);font-size:18px;margin:0 0 14px;max-width:34em}
+.capa .wrap{max-width:1240px;margin:0 auto;padding:clamp(36px,6vw,80px) max(5vw,16px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.capa h1{font:600 clamp(34px,5vw,52px)/1.05 'Montserrat',system-ui,sans-serif;margin:0 0 18px;text-wrap:balance}
+.capa p{color:var(--azul-claro);font-size:17px;margin:0 0 14px}
 .capa .chamada{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;margin-top:10px;border-radius:12px;background:var(--vermelho);color:var(--branco);font-weight:700;text-decoration:none}
 .capa .chamada:hover{background:#962C21;color:var(--branco)}
 
@@ -44,16 +44,16 @@ img{max-width:100%}
 .marcos li{position:relative;padding-left:46px}
 .marcos li::before{content:"";position:absolute;left:4px;top:5px;width:21px;height:21px;border-radius:50%;background:var(--branco);box-shadow:0 0 0 4px var(--marinho)}
 .marcos li.fim::before{background:#E0584A}
-.marcos b{display:block;font:400 26px/1.1 'DM Serif Display',Georgia,serif;color:var(--branco)}
+.marcos b{display:block;font:600 26px/1.1 'Montserrat',system-ui,sans-serif;color:var(--branco)}
 .marcos span{color:var(--azul-claro);font-size:16px}
 
 /* Conteúdo */
 main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
-.secao-titulo{font:400 clamp(28px,3.4vw,36px)/1.1 'DM Serif Display',Georgia,serif;margin:0 0 24px}
+.secao-titulo{font:600 clamp(28px,3.4vw,36px)/1.1 'Montserrat',system-ui,sans-serif;margin:0 0 24px}
 .lista{display:grid;gap:18px}
 .card{background:var(--branco);border:1px solid var(--linha);border-radius:20px;padding:24px 26px}
 .card .meta{font-size:14px;color:var(--cinza);margin:0 0 6px}
-.card h3{font:400 26px/1.15 'DM Serif Display',Georgia,serif;margin:0 0 10px}
+.card h3{font:600 26px/1.15 'Montserrat',system-ui,sans-serif;margin:0 0 10px}
 .card h3 a{color:var(--marinho);text-decoration:none}
 .card h3 a:hover{color:var(--vermelho)}
 .card p{margin:0 0 12px}
@@ -66,9 +66,9 @@ main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 /* Artigo */
 .artigo{max-width:720px;margin:0 auto}
 .artigo .meta{font-size:15px;color:var(--cinza);margin:0 0 10px}
-.artigo h1{font:400 clamp(34px,5vw,48px)/1.08 'DM Serif Display',Georgia,serif;margin:0 0 18px;text-wrap:balance}
+.artigo h1{font:600 clamp(34px,5vw,48px)/1.08 'Montserrat',system-ui,sans-serif;margin:0 0 18px;text-wrap:balance}
 .artigo .abertura{font-size:20px;line-height:1.55;color:var(--cinza);margin:0 0 32px}
-.artigo h2{font:400 30px/1.15 'DM Serif Display',Georgia,serif;margin:44px 0 14px}
+.artigo h2{font:600 30px/1.15 'Montserrat',system-ui,sans-serif;margin:44px 0 14px}
 .artigo ul{padding-left:22px}
 .artigo li{margin:8px 0}
 .tabela{width:100%;border-collapse:collapse;margin:20px 0 8px;background:var(--branco);border-radius:16px;overflow:hidden;font-size:16px}
@@ -87,7 +87,7 @@ main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 /* Sobre */
 .sobre{max-width:860px;margin:0 auto}
 .coluna{max-width:860px;margin:0 auto}
-.sobre h1{font:400 clamp(34px,5vw,48px)/1.08 'DM Serif Display',Georgia,serif;margin:0 0 20px}
+.sobre h1{font:600 clamp(34px,5vw,48px)/1.08 'Montserrat',system-ui,sans-serif;margin:0 0 20px}
 
 /* Rodapé */
 .rodape{background:var(--branco);border-top:1px solid var(--linha);font-size:15px;color:var(--cinza)}
@@ -109,3 +109,10 @@ p,li,.nota{text-align:justify;hyphens:manual;-webkit-hyphens:manual;overflow-wra
   .tabela td{border:0;padding:3px 0}
   .tabela td::before{content:attr(data-l) ": ";font-weight:700;color:var(--marinho)}
 }
+
+/* Identidade visual */
+.marca{line-height:0}
+.marca .logo{display:block;height:52px;width:auto}
+.assinatura{display:flex;align-items:center;gap:10px}
+.assinatura .dq{flex:none}
+@media(max-width:600px){.marca .logo{height:42px}.artigo .abertura{font-size:17px}}
