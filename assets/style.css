@@ -50,7 +50,7 @@ img{max-width:100%}
 /* Conteúdo */
 main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 .secao-titulo{font:400 clamp(28px,3.4vw,36px)/1.1 'DM Serif Display',Georgia,serif;margin:0 0 24px}
-.lista{display:grid;gap:18px;max-width:860px}
+.lista{display:grid;gap:18px}
 .card{background:var(--branco);border:1px solid var(--linha);border-radius:20px;padding:24px 26px}
 .card .meta{font-size:14px;color:var(--cinza);margin:0 0 6px}
 .card h3{font:400 26px/1.15 'DM Serif Display',Georgia,serif;margin:0 0 10px}
@@ -59,7 +59,7 @@ main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 .card p{margin:0 0 12px}
 .etiquetas{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
 .etiquetas li{font-size:14px;font-weight:600;background:var(--azul-claro);color:var(--marinho);padding:4px 12px;border-radius:999px}
-.proximos{margin-top:48px;max-width:860px}
+.proximos{margin-top:48px}
 .proximos ol{margin:0;padding-left:22px}
 .proximos li{margin:6px 0}
 
@@ -85,7 +85,8 @@ main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 .voltar{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
 
 /* Sobre */
-.sobre{max-width:720px}
+.sobre{max-width:860px;margin:0 auto}
+.coluna{max-width:860px;margin:0 auto}
 .sobre h1{font:400 clamp(34px,5vw,48px)/1.08 'DM Serif Display',Georgia,serif;margin:0 0 20px}
 
 /* Rodapé */
