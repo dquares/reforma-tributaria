@@ -69,7 +69,6 @@ main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 .artigo h1{font:400 clamp(34px,5vw,48px)/1.08 'DM Serif Display',Georgia,serif;margin:0 0 18px;text-wrap:balance}
 .artigo .abertura{font-size:20px;line-height:1.55;color:var(--cinza);margin:0 0 32px}
 .artigo h2{font:400 30px/1.15 'DM Serif Display',Georgia,serif;margin:44px 0 14px}
-.artigo p,.artigo li{max-width:68ch}
 .artigo ul{padding-left:22px}
 .artigo li{margin:8px 0}
 .tabela{width:100%;border-collapse:collapse;margin:20px 0 8px;background:var(--branco);border-radius:16px;overflow:hidden;font-size:16px}
@@ -94,9 +93,9 @@ main{max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,64px) max(5vw,16px)}
 .rodape .wrap{max-width:1240px;margin:0 auto;padding:28px max(5vw,16px);display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
 .rodape p{margin:0;max-width:60ch}
 
-/* Texto justificado */
-.capa p,.card p,.artigo p,.artigo li,.sobre p,.sobre li,.nota,.proximos li{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
-.artigo .meta,.card .meta{text-align:left}
+/* Texto justificado, sem separação silábica, com a mesma largura dentro e fora das caixas */
+p,li,.nota{text-align:justify;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:normal}
+.meta,.marcos li,.etiquetas li,.menu a,.rodape p,.tabela td{text-align:left}
 
 @media(max-width:820px){
   .capa .wrap{grid-template-columns:minmax(0,1fr)}
